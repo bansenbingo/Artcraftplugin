@@ -1,0 +1,37 @@
+{
+  "output": "/Users/teddyjiang/Documents/CraftAgent/smoke-20261011-185504",
+  "receipts": [
+    {
+      "mode": "desktop",
+      "mcp_initialize": true,
+      "tools": [
+        "craft_status",
+        "craft_launch",
+        "craft_list_commands",
+        "craft_inspect",
+        "craft_command",
+        "craft_control",
+        "craft_screenshot"
+      ],
+      "strict_input_validation": true
+    },
+    {
+      "mode": "engine",
+      "mcp_initialize": true,
+      "tools": [
+        "craft_engine_status",
+        "craft_engine_tools",
+        "craft_engine_call",
+        "craft_engine_reset"
+      ],
+      "strict_input_validation": true
+    },
+    {
+      "app": "gridcraft",
+      "native_mcp": true,
+      "persistent_formula_result": 18,
+      "save": true,
+      "unknown_tool_rejected": true
+    }
+  ]
+}

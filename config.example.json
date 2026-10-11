@@ -1,0 +1,7 @@
+{
+  "workspace": "~/Documents/CraftAgent",
+  "apps": {
+    "lightcraft": {"headless_args": []},
+    "wordcraft": {"headless_args": ["--author", "AI Agent"]}
+  }
+}

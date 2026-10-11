@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "craft-desktop": {
+      "command": "sh",
+      "args": ["servers/run.sh", "desktop"],
+      "cwd": ".",
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 120
+    },
+    "craft-engine": {
+      "command": "sh",
+      "args": ["servers/run.sh", "engine"],
+      "cwd": ".",
+      "startup_timeout_sec": 30,
+      "tool_timeout_sec": 3660
+    }
+  }
+}

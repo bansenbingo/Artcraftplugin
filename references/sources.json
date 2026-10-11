@@ -1,0 +1,265 @@
+{
+  "checked_on": "2026-10-11",
+  "sources": [
+    {
+      "repository": "storytold/photocraft",
+      "commit": "830541ded278db4892877a527bf59345a472fa07",
+      "files": [
+        {
+          "path": "apps/photocraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/photocraft/blob/830541ded278db4892877a527bf59345a472fa07/apps/photocraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/photocraft/blob/830541ded278db4892877a527bf59345a472fa07/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/photocraft/blob/830541ded278db4892877a527bf59345a472fa07/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/photocraft/src/control_server.rs",
+          "url": "https://github.com/storytold/photocraft/blob/830541ded278db4892877a527bf59345a472fa07/apps/photocraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/vectorcraft",
+      "commit": "22ff29167e23bf0d71c9609d189c4fdaf89e2e7c",
+      "files": [
+        {
+          "path": "apps/vectorcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/vectorcraft/blob/22ff29167e23bf0d71c9609d189c4fdaf89e2e7c/apps/vectorcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/vectorcraft/blob/22ff29167e23bf0d71c9609d189c4fdaf89e2e7c/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/vectorcraft/blob/22ff29167e23bf0d71c9609d189c4fdaf89e2e7c/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/vectorcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/vectorcraft/blob/22ff29167e23bf0d71c9609d189c4fdaf89e2e7c/apps/vectorcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/filmcraft",
+      "commit": "4e2d0bc2d3646f9cf27ef7aa8b2095c6858c7efe",
+      "files": [
+        {
+          "path": "apps/filmcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/filmcraft/blob/4e2d0bc2d3646f9cf27ef7aa8b2095c6858c7efe/apps/filmcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/agents.md",
+          "url": "https://github.com/storytold/filmcraft/blob/4e2d0bc2d3646f9cf27ef7aa8b2095c6858c7efe/docs/agents.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/filmcraft/blob/4e2d0bc2d3646f9cf27ef7aa8b2095c6858c7efe/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/filmcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/filmcraft/blob/4e2d0bc2d3646f9cf27ef7aa8b2095c6858c7efe/apps/filmcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/lightcraft",
+      "commit": "0ba118de92a81f7463ca0e6d79e1323137b1adae",
+      "files": [
+        {
+          "path": "apps/lightcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/lightcraft/blob/0ba118de92a81f7463ca0e6d79e1323137b1adae/apps/lightcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/lightcraft/blob/0ba118de92a81f7463ca0e6d79e1323137b1adae/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/lightcraft/blob/0ba118de92a81f7463ca0e6d79e1323137b1adae/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/lightcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/lightcraft/blob/0ba118de92a81f7463ca0e6d79e1323137b1adae/apps/lightcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/pdfcraft",
+      "commit": "bbbe60015c571ebfc39708ee07777b89e267122a",
+      "files": [
+        {
+          "path": "apps/pdfcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/pdfcraft/blob/bbbe60015c571ebfc39708ee07777b89e267122a/apps/pdfcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/pdfcraft/blob/bbbe60015c571ebfc39708ee07777b89e267122a/docs/mcp.md"
+        },
+        {
+          "path": "crates/ui-egui/src/control.rs",
+          "url": "https://github.com/storytold/pdfcraft/blob/bbbe60015c571ebfc39708ee07777b89e267122a/crates/ui-egui/src/control.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/effectcraft",
+      "commit": "9a7d3e76991d5372448033b473dc12c2480a6a04",
+      "files": [
+        {
+          "path": "apps/effectcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/effectcraft/blob/9a7d3e76991d5372448033b473dc12c2480a6a04/apps/effectcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/effectcraft/blob/9a7d3e76991d5372448033b473dc12c2480a6a04/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/effectcraft/blob/9a7d3e76991d5372448033b473dc12c2480a6a04/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/effectcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/effectcraft/blob/9a7d3e76991d5372448033b473dc12c2480a6a04/apps/effectcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/designcraft",
+      "commit": "16a7365701f9ce8f93ca77a27a8dc2fffb807869",
+      "files": [
+        {
+          "path": "apps/designcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/designcraft/blob/16a7365701f9ce8f93ca77a27a8dc2fffb807869/apps/designcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/designcraft/blob/16a7365701f9ce8f93ca77a27a8dc2fffb807869/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/designcraft/blob/16a7365701f9ce8f93ca77a27a8dc2fffb807869/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/designcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/designcraft/blob/16a7365701f9ce8f93ca77a27a8dc2fffb807869/apps/designcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/wordcraft",
+      "commit": "1d4f741f23773f47a27a5a017ba47e59629caee5",
+      "files": [
+        {
+          "path": "apps/wordcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/1d4f741f23773f47a27a5a017ba47e59629caee5/apps/wordcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/wordcraft/blob/1d4f741f23773f47a27a5a017ba47e59629caee5/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/wordcraft/blob/1d4f741f23773f47a27a5a017ba47e59629caee5/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/wordcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/wordcraft/blob/1d4f741f23773f47a27a5a017ba47e59629caee5/apps/wordcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/gridcraft",
+      "commit": "9f896c1249f40d18bf182199dc03042959be5f3f",
+      "files": [
+        {
+          "path": "apps/gridcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/gridcraft/blob/9f896c1249f40d18bf182199dc03042959be5f3f/apps/gridcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/gridcraft/blob/9f896c1249f40d18bf182199dc03042959be5f3f/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/gridcraft/blob/9f896c1249f40d18bf182199dc03042959be5f3f/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/gridcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/gridcraft/blob/9f896c1249f40d18bf182199dc03042959be5f3f/apps/gridcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/deckcraft",
+      "commit": "a98df49b21632d69a3da994d35df1ea91dab41af",
+      "files": [
+        {
+          "path": "apps/deckcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/deckcraft/blob/a98df49b21632d69a3da994d35df1ea91dab41af/apps/deckcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/deckcraft/blob/a98df49b21632d69a3da994d35df1ea91dab41af/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/deckcraft/blob/a98df49b21632d69a3da994d35df1ea91dab41af/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/deckcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/deckcraft/blob/a98df49b21632d69a3da994d35df1ea91dab41af/apps/deckcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/soundcraft",
+      "commit": "7414719f3760de1c9359ec9723351a7232442e61",
+      "files": [
+        {
+          "path": "apps/soundcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/soundcraft/blob/7414719f3760de1c9359ec9723351a7232442e61/apps/soundcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/soundcraft/blob/7414719f3760de1c9359ec9723351a7232442e61/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/soundcraft/blob/7414719f3760de1c9359ec9723351a7232442e61/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/soundcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/soundcraft/blob/7414719f3760de1c9359ec9723351a7232442e61/apps/soundcraft/src/control_server.rs"
+        }
+      ]
+    },
+    {
+      "repository": "storytold/cadcraft",
+      "commit": "699dd1aeca1dba018931d2eb95e92c0cf2033bbd",
+      "files": [
+        {
+          "path": "apps/cadcraft-cli/src/main.rs",
+          "url": "https://github.com/storytold/cadcraft/blob/699dd1aeca1dba018931d2eb95e92c0cf2033bbd/apps/cadcraft-cli/src/main.rs"
+        },
+        {
+          "path": "docs/mcp.md",
+          "url": "https://github.com/storytold/cadcraft/blob/699dd1aeca1dba018931d2eb95e92c0cf2033bbd/docs/mcp.md"
+        },
+        {
+          "path": "docs/control-protocol.md",
+          "url": "https://github.com/storytold/cadcraft/blob/699dd1aeca1dba018931d2eb95e92c0cf2033bbd/docs/control-protocol.md"
+        },
+        {
+          "path": "apps/cadcraft/src/control_server.rs",
+          "url": "https://github.com/storytold/cadcraft/blob/699dd1aeca1dba018931d2eb95e92c0cf2033bbd/apps/cadcraft/src/control_server.rs"
+        }
+      ]
+    }
+  ]
+}

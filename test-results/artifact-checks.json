@@ -1,0 +1,44 @@
+{
+  "output": "/Users/teddyjiang/Documents/CraftAgent/smoke-20261011-185541",
+  "checks": [
+    {
+      "file": "agent-sheet.xlsx",
+      "zip_crc_and_structure": true
+    },
+    {
+      "file": "headless-sheet.xlsx",
+      "zip_crc_and_structure": true
+    },
+    {
+      "file": "agent-document.docx",
+      "zip_crc_and_structure": true
+    },
+    {
+      "file": "agent-deck.pptx",
+      "zip_crc_and_structure": true
+    },
+    {
+      "file": "agent-image.psd",
+      "width": 320,
+      "height": 180,
+      "signature": "8BPS"
+    },
+    {
+      "file": "agent-vector.svg",
+      "xml": true
+    },
+    {
+      "file": "agent-comp.ecproj",
+      "json": true
+    },
+    {
+      "file": "agent-film.fcproj",
+      "json": true
+    },
+    {
+      "file": "headless-photo.png",
+      "width": 256,
+      "height": 160
+    }
+  ]
+}

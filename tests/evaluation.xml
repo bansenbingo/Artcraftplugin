@@ -1,0 +1,13 @@
+<evaluation>
+  <!-- Fixed synthetic GridCraft files from scripts/smoke_mcp.py. Prepare once, then answer read-only. -->
+  <qa_pair><question>Inspect the prepared desktop workbook and read its populated column. Which cell is calculated from the two numeric inputs? Return its address only.</question><answer>A3</answer></qa_pair>
+  <qa_pair><question>Inspect the prepared desktop workbook and read the formula and value in its last populated row. Return the numeric value.</question><answer>5</answer></qa_pair>
+  <qa_pair><question>Inspect the prepared desktop workbook and determine the rectangular used range covering the inputs and result. Return the range in A1 notation.</question><answer>A1:A3</answer></qa_pair>
+  <qa_pair><question>Read the prepared desktop workbook's calculated cell both as formula and as value, then inspect its formula dependencies. Return the formula text including the leading equals sign.</question><answer>=SUM(A1:A2)</answer></qa_pair>
+  <qa_pair><question>Inspect the workbook saved by the prepared headless scenario, then read the formula cell in its populated column. Return its computed value.</question><answer>18</answer></qa_pair>
+  <qa_pair><question>Inspect the workbook saved by the prepared headless scenario and read its input rows and calculated row. Which cell references the two inputs? Return its address.</question><answer>B3</answer></qa_pair>
+  <qa_pair><question>Inspect both prepared desktop and headless workbooks, locate each calculated result and read its value. What is the difference, headless minus desktop?</question><answer>13</answer></qa_pair>
+  <qa_pair><question>Inspect both prepared workbooks and read the two numeric inputs in each. Return the largest input value across both workbooks.</question><answer>11</answer></qa_pair>
+  <qa_pair><question>Inspect both prepared workbooks and read their formula cells. Are their formulas identical when ignoring which column they refer to? Return True or False.</question><answer>True</answer></qa_pair>
+  <qa_pair><question>Inspect the prepared headless workbook and read its numeric input rows. If the larger input were removed, what value would the current sum formula give? Answer by reasoning from read-only data, without editing.</question><answer>7</answer></qa_pair>
+</evaluation>

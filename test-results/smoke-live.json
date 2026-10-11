@@ -1,0 +1,98 @@
+{
+  "output": "/Users/teddyjiang/Documents/CraftAgent/smoke-20261011-185541",
+  "receipts": [
+    {
+      "mode": "desktop",
+      "mcp_initialize": true,
+      "tools": [
+        "craft_status",
+        "craft_launch",
+        "craft_list_commands",
+        "craft_inspect",
+        "craft_command",
+        "craft_control",
+        "craft_screenshot"
+      ],
+      "strict_input_validation": true
+    },
+    {
+      "app": "gridcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 294624
+    },
+    {
+      "app": "wordcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 421795
+    },
+    {
+      "app": "photocraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 212561
+    },
+    {
+      "app": "vectorcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 411227
+    },
+    {
+      "app": "effectcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 21053863
+    },
+    {
+      "app": "filmcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 21712529
+    },
+    {
+      "app": "deckcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 326593
+    },
+    {
+      "app": "lightcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 1493446
+    },
+    {
+      "app": "pdfcraft",
+      "desktop_edit": true,
+      "inspect": true,
+      "window_png_bytes": 385189
+    },
+    {
+      "mode": "engine",
+      "mcp_initialize": true,
+      "tools": [
+        "craft_engine_status",
+        "craft_engine_tools",
+        "craft_engine_call",
+        "craft_engine_reset"
+      ],
+      "strict_input_validation": true
+    },
+    {
+      "app": "gridcraft",
+      "native_mcp": true,
+      "persistent_formula_result": 18,
+      "save": true,
+      "unknown_tool_rejected": true
+    },
+    {
+      "app": "lightcraft",
+      "native_mcp": true,
+      "develop_edit": true,
+      "native_image_forwarded": true,
+      "export": true
+    }
+  ]
+}

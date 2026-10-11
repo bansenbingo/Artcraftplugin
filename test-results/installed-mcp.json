@@ -1,0 +1,92 @@
+{
+  "receipts": [
+    {
+      "entrypoint": "/Users/teddyjiang/.codex/plugins/cache/artcraft-local/artcraft-agent/0.1.0/servers/run.sh",
+      "mode": "desktop",
+      "initialize": true,
+      "tools": [
+        "craft_status",
+        "craft_launch",
+        "craft_list_commands",
+        "craft_inspect",
+        "craft_command",
+        "craft_control",
+        "craft_screenshot"
+      ],
+      "status": true,
+      "installed_gui_count": 9
+    },
+    {
+      "entrypoint": "/Users/teddyjiang/.codex/plugins/cache/artcraft-local/artcraft-agent/0.1.0/servers/run.sh",
+      "mode": "engine",
+      "initialize": true,
+      "tools": [
+        "craft_engine_status",
+        "craft_engine_tools",
+        "craft_engine_call",
+        "craft_engine_reset"
+      ],
+      "status": true,
+      "installed_gui_count": 9,
+      "native_readonly_discovery": [
+        "execute_command",
+        "inspect_workbook",
+        "read_range",
+        "write_range",
+        "set_cell",
+        "get_cell",
+        "evaluate_formula",
+        "select",
+        "insert_chart",
+        "filter"
+      ]
+    }
+  ],
+  "registrations": [
+    {
+      "name": "craft-desktop",
+      "enabled": true,
+      "disabled_reason": null,
+      "transport": {
+        "type": "stdio",
+        "command": "sh",
+        "args": [
+          "servers/run.sh",
+          "desktop"
+        ],
+        "env": null,
+        "env_vars": [],
+        "cwd": "/Users/teddyjiang/.codex/plugins/cache/artcraft-local/artcraft-agent/0.1.0/."
+      },
+      "startup_timeout_sec": 30.0,
+      "tool_timeout_sec": 120.0,
+      "auth_status": "unsupported"
+    },
+    {
+      "name": "craft-engine",
+      "enabled": true,
+      "disabled_reason": null,
+      "transport": {
+        "type": "stdio",
+        "command": "sh",
+        "args": [
+          "servers/run.sh",
+          "engine"
+        ],
+        "env": null,
+        "env_vars": [],
+        "cwd": "/Users/teddyjiang/.codex/plugins/cache/artcraft-local/artcraft-agent/0.1.0/."
+      },
+      "startup_timeout_sec": 30.0,
+      "tool_timeout_sec": 3660.0,
+      "auth_status": "unsupported"
+    }
+  ],
+  "source_cache_match": {
+    "servers/craft_runtime.py": "9540985feca8142a8e4f1778d925a197e7116230b35c98ffe66f6e43f3fcb9b1",
+    "servers/craft_mcp.py": "eb4537e265665022cd8d88abc8002bb9d3d84f220b881f25f443aa0deadc9a85",
+    "servers/run.sh": "e18dd25e05864f1334ac5793a4bd4ef05f9a971221a12980b01f83911e38d432",
+    ".mcp.json": "6d2c24700f71801de0088212ece93d4f34b4dfa8636ae20be19e873e72d2aeb0",
+    ".codex-plugin/plugin.json": "b46c0fc3bbba07dd04653b7d6b2bbf59915a542eee1d4edff8cd57c54a16eba6"
+  }
+}

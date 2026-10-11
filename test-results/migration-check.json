@@ -1,0 +1,22 @@
+{
+  "source": "/Users/teddyjiang/Documents/GitHub/Artcraftplugin",
+  "marketplace_root": "/Users/teddyjiang/Documents/GitHub/Artcraftplugin",
+  "installed_mcp": [
+    {
+      "mode": "desktop",
+      "initialize": true,
+      "tool_count": 7,
+      "status": true
+    },
+    {
+      "mode": "engine",
+      "initialize": true,
+      "tool_count": 4,
+      "status": true
+    }
+  ],
+  "enabled_servers": [
+    "craft-desktop",
+    "craft-engine"
+  ]
+}
