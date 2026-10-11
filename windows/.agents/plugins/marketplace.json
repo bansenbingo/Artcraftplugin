@@ -1,0 +1,20 @@
+{
+  "name": "artcraft-windows",
+  "interface": {
+    "displayName": "ArtCraft Windows"
+  },
+  "plugins": [
+    {
+      "name": "artcraft-agent",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "artcraft-agent",
+  "version": "0.1.1",
+  "description": "Control local Craft desktop apps and persistent headless engines with source-verified protocols.",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ArtCraft",
+    "shortDescription": "本地 Craft 软件控制、编辑与导出",
+    "longDescription": "Two local MCP servers and seven workflow skills for PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft, EffectCraft, DesignCraft and five additional Craft apps. Unofficial community integration.",
+    "developerName": "Local Community",
+    "category": "Creativity",
+    "capabilities": [
+      "Local app control",
+      "Document editing",
+      "Native MCP",
+      "PNG previews"
+    ],
+    "defaultPrompt": [
+      "检查我本机的 Craft 软件，并连接正在使用的编辑窗口",
+      "用本地 Craft 软件完成编辑，预览结果并保存工程和导出文件"
+    ],
+    "logo": "./assets/artcraft.png",
+    "logoDark": "./assets/artcraft.png",
+    "composerIcon": "./assets/artcraft.png"
+  }
+}

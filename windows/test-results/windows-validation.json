@@ -1,0 +1,50 @@
+{
+  "tested_on": "2026-10-11",
+  "apps": {
+    "vectorcraft": {
+      "desktop_control": "passed",
+      "engine_create_inspect_render_save": "passed",
+      "native_tool_count": 32,
+      "preview_dimensions": [
+        320,
+        180
+      ]
+    },
+    "filmcraft": {
+      "desktop_control": "passed",
+      "engine_create_inspect_render_save": "passed",
+      "native_tool_count": 17,
+      "preview_dimensions": [
+        320,
+        180
+      ]
+    },
+    "pdfcraft": {
+      "desktop_control": "passed",
+      "engine_create_inspect_render_save": "passed",
+      "native_tool_count": 143,
+      "preview_dimensions": [
+        612,
+        792
+      ]
+    }
+  },
+  "limitations": [
+    "VectorCraft GUI screenshot: no frame presented; independent engine PNG succeeded.",
+    "FilmCraft tested sequence creation and frame preview; video encoding/export not tested."
+  ],
+  "artifacts_verified": [
+    "agent-filmcraft-a583ec4e.png",
+    "engine-copy.pdf",
+    "engine-film.fcproj",
+    "engine.pdf",
+    "engine.vectorcraft",
+    "filmcraft-engine.png",
+    "filmcraft-gui.png",
+    "gui-film.fcproj",
+    "gui.vectorcraft",
+    "pdfcraft-engine.png",
+    "pdfcraft-gui.png",
+    "vectorcraft-engine.png"
+  ]
+}
