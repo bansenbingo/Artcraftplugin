@@ -1,15 +1,15 @@
-# ArtCraft — macOS / Windows 插件
+# Artcraft — macOS / Windows 插件
 
 供 **Codex 桌面及 CLI** 使用的本地 Craft 自动化插件：7 个 skills、2 个 stdio MCP，支持桌面控制与独立引擎。无需 OpenAI API key，不调用远程生成服务。
 
-本仓库同时保留 **原始 macOS 版 0.1.0** 和 **Windows 版 0.1.1**。两版独立存放，Windows 改动没有覆盖原来的 macOS 源码或 ZIP。
+本仓库提供 **macOS 版 0.1.0** 和 **Windows 版 0.1.1**。macOS 版已同步当前本机插件，显示名称为 **Artcraft**，插件标识为 `artcraft`，并保留从 ArtCraft Launcher 0.2.0 原始 ICNS 转换的 [PNG 图标](assets/artcraft.png)。两版独立存放。
 
 ## Agent 安装规则：先识别系统，再选择版本
 
 **请安装本插件的 agent 严格遵守以下顺序：**
 
 1. 检测当前执行主机的操作系统，例如运行 `python -c "import sys; print(sys.platform)"`（macOS 可用 `python3`，Windows 可用 `py -3`）。不要根据对话语言、路径示例或用户以前使用的系统作判断。
-2. `win32` 选择 **`windows/`**；`darwin` 选择**仓库根目录的原始 macOS 插件**。Linux/WSL 尚未验证，安装器会拒绝；要控制 Windows 软件，请在 Windows 原生 Python / PowerShell 中安装。
+2. `win32` 选择 **`windows/`**；`darwin` 选择**仓库根目录的 macOS 插件**。Linux/WSL 尚未验证，安装器会拒绝；要控制 Windows 软件，请在 Windows 原生 Python / PowerShell 中安装。
 3. 推荐执行根目录的 `scripts/install.py`，它会自动选择正确的 setup 脚本、marketplace 和插件标识。先用 `--dry-run` 查看选择结果。
 4. **只安装当前系统对应的一版**，避免重复注册同名 `craft-desktop` / `craft-engine` 服务。根目录 `.agents` 和 `.mcp.json` 属于 macOS；Windows 不要对仓库根目录运行 `codex plugin marketplace add`。
 5. 安装后初始化两个 MCP，使用 `craft_status` 和 `craft_engine_status` 核对真实 GUI/CLI 路径，再通过 `craft_engine_tools` 或隔离的 GUI 实例验证连接。目录存在或端口开放不等于连接成功。
@@ -17,9 +17,11 @@
 | 系统 | 插件目录 | Marketplace / 安装标识 | 安装包 |
 |---|---|---|---|
 | Windows | [`windows/`](windows/README.md) | `artcraft-windows` / `artcraft-agent@artcraft-windows` | [`artcraft-windows-plugin.zip`](dist/artcraft-windows-plugin.zip) · [SHA256](dist/artcraft-windows-plugin.zip.sha256) |
-| macOS | 仓库根目录（原始 0.1.0） | `artcraft-local` / `artcraft-agent@artcraft-local` | [`artcraft-agent-plugin.zip`](dist/artcraft-agent-plugin.zip) · [SHA256](dist/artcraft-agent-plugin.zip.sha256) |
+| macOS | 仓库根目录（0.1.0） | `artcraft-local` / `artcraft@artcraft-local` | [`artcraft-agent-plugin.zip`](dist/artcraft-agent-plugin.zip) · [SHA256](dist/artcraft-agent-plugin.zip.sha256) |
 
 原始 macOS 快照：[macos-v0.1.0](https://github.com/bansenbingo/Artcraftplugin/tree/macos-v0.1.0)。原始说明另存为 [README-macos-original.md](references/README-macos-original.md)，其中的历史本机路径仅用于记录；安装以本页为准。
+
+当前 macOS ZIP 与本机已启用的插件一致，包含名称配置、图标、7 个 skills 和 2 个 MCP 入口。历史快照保留更新前的名称；最新安装请使用 `main` 或上表中的 macOS ZIP。
 
 ## Windows 安装
 
@@ -50,7 +52,7 @@ Windows GUI / CLI 自动从 `C:\Program Files\<XxxCraft>\<xxxcraft>.exe` 和 `<x
 
 ## macOS 安装
 
-需要 **Python 3.11+**、Git、支持 `codex plugin` 的 Codex CLI。macOS 使用根目录保留的原始 shell 启动器和 `.app` 路径发现。
+需要 **Python 3.11+**、Git、支持 `codex plugin` 的 Codex CLI。macOS 使用根目录的 shell 启动器和 `.app` 路径发现。
 
 ```sh
 git clone https://github.com/bansenbingo/Artcraftplugin.git
@@ -64,10 +66,10 @@ python3 scripts/install.py
 ```sh
 python3 scripts/setup.py
 codex plugin marketplace add "$PWD"
-codex plugin add artcraft-agent@artcraft-local
+codex plugin add artcraft@artcraft-local
 ```
 
-使用原始 macOS ZIP 时，解压到固定目录后执行上述三条手动命令。完整历史测试见 [macOS 验证记录](VALIDATION.md)。macOS 的 GUI 通常不自带 CLI；可按下面方式安装匹配版本的官方 CLI（带 SHA256 校验）：
+使用 macOS ZIP 时，解压到固定目录后执行上述三条手动命令。显示名称和图标由包内 `.codex-plugin/plugin.json` 与 `assets/artcraft.png` 提供。完整历史测试见 [macOS 验证记录](VALIDATION.md)。macOS 的 GUI 通常不自带 CLI；可按下面方式安装匹配版本的官方 CLI（带 SHA256 校验）：
 
 ```sh
 python3 scripts/setup.py --skip-runtime --install-cli lightcraft
@@ -87,7 +89,7 @@ python3 scripts/setup.py --skip-runtime --install-cli lightcraft
 
 可以对 agent 说：
 
-> 使用 ArtCraft 检查本机 Craft 软件，读取 PhotoCraft 的实时工具目录，创建合成测试图，预览后保存到 CraftAgent 文件夹。
+> 使用 Artcraft 检查本机 Craft 软件，读取 PhotoCraft 的实时工具目录，创建合成测试图，预览后保存到 CraftAgent 文件夹。
 
 > 使用 craft-photos 连接 LightCraft，把我指定照片的曝光提高 0.5，先预览，再导出新文件。
 

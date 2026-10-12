@@ -22,10 +22,11 @@ def edition(platform: str, root: Path = ROOT) -> tuple[Path, str]:
 
 def plan(platform: str, python: str, codex: str, root: Path = ROOT) -> list[list[str]]:
     plugin_root, marketplace = edition(platform, root)
+    plugin_name = "artcraft" if platform == "darwin" else "artcraft-agent"
     return [
         [python, str(plugin_root / "scripts/setup.py")],
         [codex, "plugin", "marketplace", "add", str(plugin_root)],
-        [codex, "plugin", "add", "artcraft-agent@" + marketplace],
+        [codex, "plugin", "add", plugin_name + "@" + marketplace],
     ]
 
 
@@ -45,7 +46,7 @@ def main() -> None:
         parser.error("Codex CLI not found. Add it to PATH or supply --codex /path/to/codex")
     commands = plan(sys.platform, sys.executable, codex or "codex")
     print(json.dumps({"platform": sys.platform, "plugin_root": str(plugin_root),
-                      "plugin": "artcraft-agent@" + marketplace, "commands": commands}, indent=2), flush=True)
+                      "plugin": commands[-1][-1], "commands": commands}, indent=2), flush=True)
     if args.dry_run:
         return
     # Check CLI support before setup downloads dependencies or changes user config.

@@ -1,12 +1,15 @@
 {
-  "name": "artcraft-agent",
+  "name": "artcraft",
   "version": "0.1.0",
   "description": "Control local Craft desktop apps and persistent headless engines with source-verified protocols.",
   "license": "MIT",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
-    "displayName": "ArtCraft Agent",
+    "displayName": "Artcraft",
+    "composerIcon": "./assets/artcraft.png",
+    "logo": "./assets/artcraft.png",
+    "logoDark": "./assets/artcraft.png",
     "shortDescription": "本地 Craft 软件控制、编辑与导出",
     "longDescription": "Two local MCP servers and seven workflow skills for PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft, EffectCraft, DesignCraft and five additional Craft apps. Unofficial community integration.",
     "developerName": "Local Community",

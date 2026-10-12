@@ -15,11 +15,11 @@ class PlatformInstallTests(unittest.TestCase):
         self.assertEqual(Path(commands[1][-1]), ROOT / "windows")
         self.assertEqual(commands[2][-1], "artcraft-agent@artcraft-windows")
 
-    def test_macos_keeps_original_marketplace_and_setup(self):
+    def test_macos_installs_current_plugin_and_setup(self):
         commands = installer.plan("darwin", "python3", "codex", ROOT)
         self.assertEqual(Path(commands[0][1]), ROOT / "scripts/setup.py")
         self.assertEqual(Path(commands[1][-1]), ROOT)
-        self.assertEqual(commands[2][-1], "artcraft-agent@artcraft-local")
+        self.assertEqual(commands[2][-1], "artcraft@artcraft-local")
 
     def test_unsupported_platform_cannot_install_macos_by_default(self):
         with self.assertRaises(ValueError):

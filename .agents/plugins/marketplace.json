@@ -1,8 +1,8 @@
 {
   "name": "artcraft-local",
-  "interface": {"displayName": "ArtCraft Local"},
+  "interface": {"displayName": "Artcraft"},
   "plugins": [{
-    "name": "artcraft-agent",
+    "name": "artcraft",
     "source": {"source": "local", "path": "./"},
     "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
     "category": "Creativity"
